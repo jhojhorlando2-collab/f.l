@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Lesly 💚</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow: hidden;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #03140a,
+                #0b3519,
+                #05250f,
+                #021108
+            );
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+
+        /* ESTRELLAS */
+
+        .estrella {
+            position: absolute;
+            color: #a7ffb9;
+            font-size: 20px;
+
+            animation: brillo 2s infinite alternate;
+        }
+
+        .e1 {
+            top: 10%;
+            left: 10%;
+        }
+
+        .e2 {
+            top: 18%;
+            left: 80%;
+            animation-delay: .5s;
+        }
+
+        .e3 {
+            top: 70%;
+            left: 8%;
+            animation-delay: 1s;
+        }
+
+        .e4 {
+            top: 80%;
+            left: 88%;
+            animation-delay: 1.5s;
+        }
+
+        .e5 {
+            top: 35%;
+            left: 94%;
+            animation-delay: .8s;
+        }
+
+        .e6 {
+            top: 55%;
+            left: 4%;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes brillo {
+
+            from {
+                opacity: .2;
+                transform: scale(.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+
+        }
+
+
+        /* CONTENEDOR */
+
+        .contenedor {
+            width: 90%;
+            max-width: 650px;
+
+            text-align: center;
+
+            position: relative;
+            z-index: 10;
+        }
+
+
+        /* NOMBRE */
+
+        h1 {
+            font-size: 55px;
+
+            color: #8affaa;
+
+            margin-bottom: 8px;
+
+            text-shadow:
+                0 0 10px #32ff63,
+                0 0 25px #20c94b,
+                0 0 50px #138c32;
+
+            animation: nombre 2s infinite alternate;
+        }
+
+        @keyframes nombre {
+
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.04);
+            }
+
+        }
+
+
+        .subtitulo {
+            color: #d7ffe1;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+
+        /* FLOR */
+
+        .flor {
+            width: 220px;
+            height: 300px;
+
+            position: relative;
+
+            margin: 0 auto;
+        }
+
+
+        /* PÉTALOS */
+
+        .petalo {
+            position: absolute;
+
+            width: 70px;
+            height: 105px;
+
+            left: 75px;
+            top: 15px;
+
+            border-radius: 50%;
+
+            background: radial-gradient(
+                ellipse at center,
+                #7dff9a,
+                #30cf52 60%,
+                #087525
+            );
+
+            transform-origin: 35px 90px;
+
+            box-shadow:
+                0 0 15px #32ff63,
+                inset 0 0 10px rgba(255,255,255,.25);
+        }
+
+        .p1 {
+            transform: rotate(0deg);
+        }
+
+        .p2 {
+            transform: rotate(45deg);
+        }
+
+        .p3 {
+            transform: rotate(90deg);
+        }
+
+        .p4 {
+            transform: rotate(135deg);
+        }
+
+        .p5 {
+            transform: rotate(180deg);
+        }
+
+        .p6 {
+            transform: rotate(225deg);
+        }
+
+        .p7 {
+            transform: rotate(270deg);
+        }
+
+        .p8 {
+            transform: rotate(315deg);
+        }
+
+
+        /* CENTRO */
+
+        .centro {
+            position: absolute;
+
+            width: 78px;
+            height: 78px;
+
+            left: 71px;
+            top: 70px;
+
+            border-radius: 50%;
+
+            background: radial-gradient(
+                circle,
+                #f2ff7a,
+                #c5e82e,
+                #819d16
+            );
+
+            z-index: 5;
+
+            box-shadow:
+                0 0 15px #e4ff4c,
+                0 0 35px #a7d629;
+        }
+
+
+        /* TALLO */
+
+        .tallo {
+            position: absolute;
+
+            width: 13px;
+            height: 145px;
+
+            left: 103px;
+            top: 125px;
+
+            border-radius: 20px;
+
+            background: linear-gradient(
+                to right,
+                #146b2e,
+                #46d35d,
+                #146b2e
+            );
+
+            box-shadow: 0 0 10px #32d653;
+        }
+
+
+        /* HOJAS */
+
+        .hoja {
+            position: absolute;
+
+            width: 75px;
+            height: 38px;
+
+            left: 35px;
+            top: 195px;
+
+            border-radius: 100% 0;
+
+            transform: rotate(-25deg);
+
+            background: linear-gradient(
+                135deg,
+                #40e965,
+                #14762e
+            );
+
+            box-shadow: 0 0 12px #2bd651;
+        }
+
+        .hoja2 {
+            position: absolute;
+
+            width: 75px;
+            height: 38px;
+
+            left: 110px;
+            top: 225px;
+
+            border-radius: 0 100%;
+
+            transform: rotate(25deg);
+
+            background: linear-gradient(
+                45deg,
+                #40e965,
+                #14762e
+            );
+
+            box-shadow: 0 0 12px #2bd651;
+        }
+
+
+        /* MENSAJE */
+
+        .mensaje {
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            color: #edfff1;
+
+            margin-top: -10px;
+
+        }
+
+        .mensaje strong {
+
+            display: inline-block;
+
+            margin-top: 8px;
+
+            font-size: 24px;
+
+            color: #8affaa;
+
+            text-shadow:
+                0 0 10px #3cff68,
+                0 0 20px #1eaa3e;
+        }
+
+
+        /* BOTÓN DE MÚSICA */
+
+        .boton-musica {
+
+            margin-top: 22px;
+
+            padding: 15px 30px;
+
+            border: none;
+
+            border-radius: 40px;
+
+            background: linear-gradient(
+                135deg,
+                #7dff9a,
+                #20c94b
+            );
+
+            color: #04200b;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 0 15px #3cff68,
+                0 0 30px rgba(60,255,104,.4);
+
+            transition: .3s;
+        }
+
+        .boton-musica:hover {
+
+            transform: scale(1.08);
+
+            box-shadow:
+                0 0 25px #7dff9a,
+                0 0 45px #28d952;
+        }
+
+
+        /* CORAZONES */
+
+        .corazon {
+
+            position: absolute;
+
+            bottom: -50px;
+
+            color: #6dff8e;
+
+            font-size: 25px;
+
+            opacity: 0;
+
+            animation: subir 7s linear infinite;
+        }
+
+        .c1 {
+            left: 8%;
+            animation-delay: 0s;
+        }
+
+        .c2 {
+            left: 22%;
+            animation-delay: 2s;
+        }
+
+        .c3 {
+            left: 40%;
+            animation-delay: 4s;
+        }
+
+        .c4 {
+            left: 65%;
+            animation-delay: 1s;
+        }
+
+        .c5 {
+            left: 82%;
+            animation-delay: 3s;
+        }
+
+        .c6 {
+            left: 95%;
+            animation-delay: 5s;
+        }
+
+        @keyframes subir {
+
+            0% {
+                transform:
+                    translateY(0)
+                    rotate(0deg)
+                    scale(.5);
+
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            50% {
+                transform:
+                    translateY(-50vh)
+                    rotate(180deg)
+                    scale(1);
+            }
+
+            100% {
+                transform:
+                    translateY(-115vh)
+                    rotate(360deg)
+                    scale(.5);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* TEXTO FINAL */
+
+        .final {
+
+            margin-top: 10px;
+
+            font-size: 13px;
+
+            color: #9ee9ae;
+
+            opacity: .8;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .subtitulo {
+                font-size: 15px;
+            }
+
+            .mensaje {
+                font-size: 16px;
+            }
+
+            .mensaje strong {
+                font-size: 20px;
+            }
+
+            .flor {
+                transform: scale(.82);
+                margin-top: -20px;
+                margin-bottom: -35px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ESTRELLAS -->
+
+    <div class="estrella e1">✦</div>
+    <div class="estrella e2">✧</div>
+    <div class="estrella e3">✦</div>
+    <div class="estrella e4">✧</div>
+    <div class="estrella e5">✦</div>
+    <div class="estrella e6">✧</div>
+
+
+    <!-- CORAZONES -->
+
+    <div class="corazon c1">💚</div>
+    <div class="corazon c2">💚</div>
+    <div class="corazon c3">💚</div>
+    <div class="corazon c4">💚</div>
+    <div class="corazon c5">💚</div>
+    <div class="corazon c6">💚</div>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <div class="contenedor">
+
+
+        <h1>Lesly 💚</h1>
+
+
+        <div class="subtitulo">
+            Una pequeña sorpresa para la persona que amo ✨
+        </div>
+
+
+        <!-- FLOR -->
+
+        <div class="flor">
+
+            <div class="petalo p1"></div>
+            <div class="petalo p2"></div>
+            <div class="petalo p3"></div>
+            <div class="petalo p4"></div>
+            <div class="petalo p5"></div>
+            <div class="petalo p6"></div>
+            <div class="petalo p7"></div>
+            <div class="petalo p8"></div>
+
+            <div class="centro"></div>
+
+            <div class="tallo"></div>
+
+            <div class="hoja"></div>
+            <div class="hoja2"></div>
+
+        </div>
+
+
+        <!-- MENSAJE -->
+
+        <div class="mensaje">
+
+            Lesly, quiero que sepas que eres
+            <br>
+
+            una persona muy especial para mí. 💚
+
+            <br>
+
+            Desde que llegaste a mi vida,
+            <br>
+
+            mis días tienen un motivo más para sonreír.
+
+            <br>
+
+            Gracias por estar a mi lado,
+            <br>
+
+            por cada momento y por cada sonrisa.
+
+            <br>
+
+            <strong>
+                Te quiero muchísimo, Lesly. 💚
+            </strong>
+
+        </div>
+
+
+        <!-- MÚSICA -->
+
+        <audio id="musica" loop>
+
+            <source src="audio/1.mp3" type="audio/mpeg">
+
+            Tu navegador no puede reproducir este audio.
+
+        </audio>
+
+
+        <!-- BOTÓN -->
+
+        <button
+            class="boton-musica"
+            id="botonMusica"
+            onclick="reproducirMusica()">
+
+            ▶️ Reproducir música 💚
+
+        </button>
+
+
+        <div class="final">
+            Hecho especialmente para ti ❤️
+        </div>
+
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function reproducirMusica() {
+
+            const musica =
+                document.getElementById("musica");
+
+            const boton =
+                document.getElementById("botonMusica");
+
+
+            if (musica.paused) {
+
+                musica.play()
+                    .then(function() {
+
+                        boton.innerHTML =
+                            "⏸️ Pausar música 💚";
+
+                    })
+                    .catch(function(error) {
+
+                        console.log(error);
+
+                        alert(
+                            "No se pudo reproducir la música. " +
+                            "Verifica que el archivo esté en la carpeta audio " +
+                            "y se llame 1.mp3"
+                        );
+
+                    });
+
+            } else {
+
+                musica.pause();
+
+                boton.innerHTML =
+                    "▶️ Reproducir música 💚";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
